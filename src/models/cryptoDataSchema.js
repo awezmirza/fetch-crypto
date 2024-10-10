@@ -4,25 +4,24 @@ const cryptoDataSchema = new mongoose.Schema(
     {
         name: {
             type: String,
-            required: true,
+            required: true
         },
         symbol: {
             type: String,
-            required: true,
+            required: true
         },
         price: {
             type: Number,
-            required: true,
+            required: true
         },
         marketCap: {
             type: Number,
-            required: true,
+            required: true
         },
         change24h: {
             type: Number,
-            required: true,
+            required: true
         }
-
     },
     { timestamps: true }
 );

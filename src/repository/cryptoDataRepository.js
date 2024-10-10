@@ -1,11 +1,6 @@
 import CryptoData from "../models/cryptoDataSchema.js";
 
 class CryptoDataRepository {
-    async create(data) {
-        const cryptoData = await CryptoData.create(data);
-        return cryptoData;
-    }
-
     async insertMultipleData(dataArray) {
         try {
             await CryptoData.insertMany(dataArray);
@@ -14,6 +9,11 @@ class CryptoDataRepository {
         }
     }
 
+    async getStats(coin) {
+        return await CryptoData.findOne({ name: new RegExp(coin, "i") }).sort({
+            timestamp: -1
+        });
+    }
 }
 
 export default CryptoDataRepository;
