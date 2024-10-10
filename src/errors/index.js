@@ -4,7 +4,7 @@ import devError from "./devError.js";
 import prodError from "./prodError.js";
 import errorMiddleware from "./errorMiddleware.js";
 
-export default {
+export {
     asyncErrorHandler,
     customError,
     devError,

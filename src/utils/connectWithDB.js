@@ -1,4 +1,4 @@
-import { MONGOOSE_URL } from "../config/index.js";
+import { MONGOOSE_URL } from "../config/config.js";
 import mongoose from "mongoose";
 
 const connectWithDB = async () => {

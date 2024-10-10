@@ -1,7 +1,7 @@
 import { NODE_ENV } from "../config/config.js";
-import {devError, prodError} from "./index.js";
+import { devError, prodError } from "./index.js";
 
-const errorMiddleware = (err, req, res) => {
+const errorMiddleware = (err, req, res, next) => {
     err.statusCode = err.statusCode || 500;
     if (NODE_ENV == "development") {
         devError(res, err);
