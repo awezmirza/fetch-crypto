@@ -18,7 +18,9 @@ Created a route with all the error and edge case handling to retrieve the latest
 Working Routes:
 
 http://16.171.132.40:3000/stats?coin=matic
+
 http://16.171.132.40:3000/stats?coin=bitcoin
+
 http://16.171.132.40:3000/stats?coin=ethereum
 
 ### Task 3
@@ -30,7 +32,9 @@ Created a route with all the error and edge case handling to retrieve the latest
 Working Routes:
 
 http://16.171.132.40:3000/deviation?coin=matic
+
 http://16.171.132.40:3000/deviation?coin=bitcoin
+
 http://16.171.132.40:3000/deviation?coin=ethereum
 
 ## Optional Tasks
