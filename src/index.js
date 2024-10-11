@@ -3,14 +3,16 @@ import { PORT } from "./config/config.js";
 import connectWithDB from "./utils/connectWithDB.js";
 import router from "./routes/router.js";
 import cron from "node-cron";
-
-// Testing
+import cors from "cors";
 import fetchCryptoData from "./utils/fetchCryptoData.js";
 
 const app = express();
 
 const initializeServer = () => {
-    // TODO Add Limit on this
+    // TODO Add Rate Limiter
+
+    // TODO Configure this later
+    app.use(cors());
     app.use(express.urlencoded({ extended: false }));
     app.use(express.json());
 
