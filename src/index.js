@@ -24,7 +24,6 @@ const initializeServer = () => {
 };
 
 cron.schedule("0 */2 * * *", () => {
-    console.log("Fetching");
     fetchCryptoData();
 });
 
