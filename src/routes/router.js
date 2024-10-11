@@ -1,6 +1,10 @@
 import express from "express";
 import { asyncErrorHandler, errorMiddleware } from "../errors/index.js";
-import { noRouteController, statsController } from "../controllers/index.js";
+import {
+    deviationController,
+    noRouteController,
+    statsController
+} from "../controllers/index.js";
 
 const router = express.Router();
 
@@ -9,6 +13,7 @@ router.get("/ping", (req, res) => {
 });
 
 router.get("/stats", asyncErrorHandler(statsController));
+router.get("/deviation", asyncErrorHandler(deviationController));
 
 router.all("*", noRouteController);
 

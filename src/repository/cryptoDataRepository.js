@@ -14,6 +14,13 @@ class CryptoDataRepository {
             timestamp: -1
         });
     }
+
+    async getDeviationData(coin) {
+        return await CryptoData.find({ name: new RegExp(coin, "i") })
+            .sort({ timestamp: -1 })
+            .limit(100)
+            .select("price");
+    }
 }
 
 export default CryptoDataRepository;
