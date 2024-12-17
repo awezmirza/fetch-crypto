@@ -1,6 +1,3 @@
-
-# Assignment @KoinX
-
 ## Tasks Completed
 
 ### Task 1
@@ -17,11 +14,11 @@ Created a route with all the error and edge case handling to retrieve the latest
 
 Working Routes:
 
-http://16.171.132.40:3000/stats?coin=matic
+https://fetch-crypto.fly.dev/stats?coin=matic
 
-http://16.171.132.40:3000/stats?coin=bitcoin
+https://fetch-crypto.fly.dev/stats?coin=bitcoin
 
-http://16.171.132.40:3000/stats?coin=ethereum
+https://fetch-crypto.fly.dev/stats?coin=ethereum
 
 ### Task 3
 Implement an API "/deviation", that will return the standard deviation of the price of the requested cryptocurrency for the last 100 records stored by the background service in the database.
@@ -31,11 +28,11 @@ Created a route with all the error and edge case handling to retrieve the latest
 
 Working Routes:
 
-http://16.171.132.40:3000/deviation?coin=matic
+https://fetch-crypto.fly.dev/deviation?coin=matic
 
-http://16.171.132.40:3000/deviation?coin=bitcoin
+https://fetch-crypto.fly.dev/deviation?coin=bitcoin
 
-http://16.171.132.40:3000/deviation?coin=ethereum
+https://fetch-crypto.fly.dev/deviation?coin=ethereum
 
 ## Optional Tasks
 
@@ -49,11 +46,9 @@ Used the MongoDB Atlas to remotely host our Database.
 Deploy your backend using platforms like Heroku or any cloud platform like AWS, GCP or Azure and expose the API to the public.
 
 #### Approach:
-Spinned up the AWS EC2 instance for seamlessly running our backend server.
+Deployed on Fly IO for seamlessly running our backend server.
 
-Public Server Link: http://16.171.132.40:3000
-
-Test Link: http://16.171.132.40:3000/ping
+Test Link: https://fetch-crypto.fly.dev/ping
 
 ## Note Points
 
